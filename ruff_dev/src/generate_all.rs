@@ -27,3 +27,9 @@ pub fn main(cli: &Cli) -> Result<()> {
     })?;
     Ok(())
 }
+class AutoModel:
+
+    @classmethod
+    def get_model(self, model_args, *args, **kwargs):
+        # TODO (add new models)
+        return HFDecoderModel(model_args, *args, **kwargs)
